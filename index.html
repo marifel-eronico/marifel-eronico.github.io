@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marifel Gym</title>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+  <!---custom css link-->
+  <link rel="stylesheet" href="Style.css">
+
+  <!---google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!---preload images-->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!---#HEADER-->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/Logo.png" alt="">
+
+        
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp"  onclick="show()"> </ion-icon>aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="active">
+            <a href="index.html" class="navbar-link " data-nav-link>Home</a>
+          </li><link rel="stylesheet" href="Style.css">
+
+          <li>
+            <a href="about.html" class="navbar-link " data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="class.html" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="Sign Up.html" class="navbar-link" data-nav-link>Sign Up</a>
+          </li>
+
+
+        </ul>
+
+      </nav>
+    
+      <button class="nav-open-btn"   aria-label="open menu" data-nav-toggler >
+       <i class="fas fa-bars" onclick="show()"></i>
+
+      </button>
+
+
+      
+
+    </div>
+
+    <div class="sidebar" style="display: none;">
+      <ul>
+        <i class="fas fa-times" id="x-ni-marifel" onclick="hide()"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="class.html">Class</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="sign up.html">Sign up</a></li>
+        
+      </ul>
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <!---#HERO-->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('/images/classes-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Fitness Gym
+            </p>
+
+            <h1 class="h1 hero-title">KEEP YOUR BODY FIT & STRONG!</h1>
+
+            <p class="section-text">
+       Unleash your potential and embark on a journey towards a stronger,
+    fitter, and more confident you. Sign up for 'Keep your body fit & strong!' now
+          and witness the incredible transformation your body is capable of!
+
+            </p>
+
+            <a href="#" class="btn btn-primary">Get Started</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="images/Barbel.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="images/about-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="images/about-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #ABOUT -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">        
+            Welcome to Our fitness Gym
+</h2>
+
+            <p class="section-text">
+ At Marifel Gym, where your fitness journey begins! We are more than just a gym – we are a community dedicated to helping you achieve your fitness goals, no matter where you’re starting from. Whether you're looking to build strength, lose weight, improve flexibility, or boost endurance, we are here to support you every step of the way.
+ we are committed to providing a welcoming, inclusive, and motivating environment for everyone. Our mission is simple: to inspire, educate, and empower individuals to live healthier and more active lives. We believe that fitness is for everyone, and we create personalized programs to meet the unique needs of each member.
+Join us and take the first step toward a healthier, stronger you!
+            </p>
+        </div>
+      </section>
+
+
+
+      <!---#VIDEO-->
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Explore Fitness Life</h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-link has-before">Watch More</a>
+
+          </div>
+
+        </div>
+      </section>
+   <!--- #CLASS -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">Our Classes</p>
+
+          <h2 class="h2 section-title text-center">Fitness Classes For Every Goal</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="images/class-1.png" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">WEIGHT LIFTING</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    A cornerstone of many fitness routines, especially in gyms.It's a great way to build strength, muscle mass, and improve overall fitnes.It is effective not only for building muscle but also for overall health and fitness. It’s important to create a balanced routine that works all major muscle groups and includes proper recovery.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">85%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="images/class-2.png" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">CARDIO WORKOUT</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                     A great way to improve heart health, endurance, and overall fitness.It typically involve activities that elevate your heart rate and keep it elevated for an extended period, improving cardiovascular function and burning calories.It improve heart health, increase stamina, and help with fat loss, making them ideal for overall wellness and fitness goals.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">70%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="images/class-3.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">POWER YOGA</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                     a dynamic and vigorous form of yoga that combines traditional yoga poses with  a focus on breath control.It's an excellent workout for those who want to blend strength training, flexibility, and mindfulness into one session. It is a great way to combine the mental and spiritual aspects of yoga with the physical benefits of strength.
+                  
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="images/class-4.png" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">GROUP FITNESS</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    a great way to stay motivated, make progress toward your fitness goals, and have fun while working out. With a variety of classes and formats available, you can find something that fits your interests, fitness level, and goals. Plus, the group atmosphere provides social support that can help you stay committed to your workout routine.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">60%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <!--- #BLOG-->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our News</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">05 May 2021</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">GOING TO THE GYM FOR THE FIRST TIME</a>
+                  </h3>
+
+                  <p class="card-text">
+                    When you first go to the gym, you might feel unsure, overwhelmed, or even a little scared. However, there are some things you can expect and some tips that can help you enjoy your experience.
+ 
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">8 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">ADVICE ON OVERCOMING GYMTIMIDATION</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Starting the gym for anyone can be a daunting prospect. The fear of starting is something we call gymtimidation. With all the fears and worries.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">10 September 2023</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">INTERMEDIATE WORKOUT PLAN</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Along your fitness journey, you’ve learned that a little progress each day adds up to big results. You’ve perfected your form, know your way around the gym, and are ready to take your routine to the next level.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="images/blog-4.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">02 August 2023</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">BEST WARM-UP & RECOVERY WORKOUTS</a>
+                  </h3>
+
+                  <p class="card-text">
+               If you hit the gym focused solely on your workout, you’re not alone. Warm-up and recovery are often overlooked, but they are a key part of your gym routine and will have a huge impact on your results. We’d like to encourage you to add an extra 15-20 minutes to your gym visit and make time for warm-up and recovery.
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--Sign up-->
+  <div class="section footer-top bg-dark has-bg-image" style="background-image: url('images/footer-bg.png')">
+        <section class="Signup-box" id = "Sign Up" aria-label="Sign Up"></section>
+          <div class="signup-box">
+          <h2>Sign Up</h1>
+          <h3>It's free and only takes a minute</h4>
+          <form>
+            <label>First Name</label>
+            <input type="text" placeholder="" />
+            <label>Last Name</label>
+            <input type="text" placeholder="" />
+            <label>Email</label>
+            <input type="email" placeholder="" />
+            <label>Password</label>
+            <input type="password" placeholder="" />
+            <label>Confirm Password</label>
+            <input type="password" placeholder="" />
+            <input type="button" value="Submit" />
+          </form>
+          <p>
+            By clicking the Sign Up button,you agree to our <br/>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+          </p>
+        </div>
+        <p class="para-2">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      
+   
+
+
+  <!--- #FOOTER-->
+  <div class="section footer-top bg-dark has-bg-image" style="background-image: url('images/footer-bg.png')">
+  <section class="section footer" id="footer" aria-label="footer">
+  <footer class="footer">
+
+    
+      <div class="container">
+
+        <div class="footer-brand">
+
+      
+          <p class="footer-brand-text">
+            WORKOUT   SCHEDULE:
+          </p>
+
+          <div class="wrapper">
+
+            <img src="images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+            Talibon ,Bohol, Philippines
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+
+              <a href="tel:+968330557i" class="footer-link">+968 330 5578</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@Marifelgym.com" class="footer-link">info@Marifelgym.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">services@Marifelgym.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Send your Email here" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+         Marifel Gym. All Rights Reserved 2024.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+  <!--- #BACK TO TOP -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+  <!-- - custom js link-->
+  <script src="assets/js/script.js" defer></script>
+  <script src="Main.js"></script>
+  <!--- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
